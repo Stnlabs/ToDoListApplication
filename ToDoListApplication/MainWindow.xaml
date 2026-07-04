@@ -1,0 +1,54 @@
+﻿<Window x:Class="ToDoListApplication.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ToDoListApplication"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="Activity" HorizontalAlignment="Left" Margin="14,10,0,0" VerticalAlignment="Top" FontSize="25"/>
+        <TextBox HorizontalAlignment="Left" Margin="10,76,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Name="Input1" TextChanged="Input1_TextChanged"/>
+        <TextBox HorizontalAlignment="Left" Margin="10,113,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Name="Input2"/>
+        <TextBox HorizontalAlignment="Left" Margin="14,151,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Name="Input3"/>
+        <TextBox HorizontalAlignment="Left" Margin="14,185,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Name="Input4"/>
+        <TextBox HorizontalAlignment="Left" Margin="14,223,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Name="Input5"/>
+        <TextBox HorizontalAlignment="Left" Margin="10,269,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Name="Input6"/>
+        <TextBox HorizontalAlignment="Left" Margin="14,306,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Name="Input7"/>
+        <Button Content="Save" HorizontalAlignment="Left" Margin="88,384,0,0" VerticalAlignment="Top" Name="SaveBTN" Width="116" Click="SaveBTN_Click"/>
+        <Label Content="Date" HorizontalAlignment="Left" Margin="223,9,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="93" FontSize="25">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.302"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <TextBox HorizontalAlignment="Left" Margin="223,76,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="Date1"/>
+        <TextBox HorizontalAlignment="Left" Margin="223,107,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="Date2"/>
+        <TextBox HorizontalAlignment="Left" Margin="223,145,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="Date3"/>
+        <TextBox HorizontalAlignment="Left" Margin="223,182,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="Date4"/>
+        <TextBox HorizontalAlignment="Left" Margin="223,223,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="Date5"/>
+        <TextBox HorizontalAlignment="Left" Margin="223,269,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="Date6"/>
+        <TextBox HorizontalAlignment="Left" Margin="223,306,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="Date7"/>
+        <Label Content="Time" Margin="416,10,248,381" FontSize="25"/>
+        <TextBox HorizontalAlignment="Left" Margin="416,70,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="Time1"/>
+        <TextBox HorizontalAlignment="Left" Margin="416,107,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="Time2"/>
+        <TextBox HorizontalAlignment="Left" Margin="416,145,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="Time3"/>
+        <TextBox HorizontalAlignment="Left" Margin="416,182,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="Time4"/>
+        <TextBox HorizontalAlignment="Left" Margin="416,223,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="Time5"/>
+        <TextBox HorizontalAlignment="Left" Margin="416,269,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="Time6"/>
+        <TextBox HorizontalAlignment="Left" Margin="416,306,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="Time7"/>
+        <DatePicker HorizontalAlignment="Left" Margin="609,64,0,0" VerticalAlignment="Top" Name="Datepicker1" />
+        
+        <DatePicker HorizontalAlignment="Left" Margin="609,101,0,0" VerticalAlignment="Top" Name="Datepicker2"/>
+        <DatePicker HorizontalAlignment="Left" Margin="609,139,0,0" VerticalAlignment="Top" Name="Datepicker3"/>
+        <DatePicker HorizontalAlignment="Left" Margin="609,179,0,0" VerticalAlignment="Top" Name="Datepicker4"/>
+        <DatePicker HorizontalAlignment="Left" Margin="609,217,0,0" VerticalAlignment="Top" Name="Datepicker5"/>
+        <DatePicker HorizontalAlignment="Left" Margin="609,263,0,0" VerticalAlignment="Top" Name="Datepicker6"/>
+        <DatePicker HorizontalAlignment="Left" Margin="609,300,0,0" VerticalAlignment="Top" Name="Datepicker7"/>
+
+    </Grid>
+</Window>
