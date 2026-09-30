@@ -5,50 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ToDoListApplication"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Label Content="Activity" HorizontalAlignment="Left" Margin="14,10,0,0" VerticalAlignment="Top" FontSize="25"/>
-        <TextBox HorizontalAlignment="Left" Margin="10,76,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Name="Input1" TextChanged="Input1_TextChanged"/>
-        <TextBox HorizontalAlignment="Left" Margin="10,113,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Name="Input2"/>
-        <TextBox HorizontalAlignment="Left" Margin="14,151,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Name="Input3"/>
-        <TextBox HorizontalAlignment="Left" Margin="14,185,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Name="Input4"/>
-        <TextBox HorizontalAlignment="Left" Margin="14,223,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Name="Input5"/>
-        <TextBox HorizontalAlignment="Left" Margin="10,269,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Name="Input6"/>
-        <TextBox HorizontalAlignment="Left" Margin="14,306,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Name="Input7"/>
-        <Button Content="Save" HorizontalAlignment="Left" Margin="88,384,0,0" VerticalAlignment="Top" Name="SaveBTN" Width="116" Click="SaveBTN_Click"/>
-        <Label Content="Date" HorizontalAlignment="Left" Margin="223,9,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="93" FontSize="25">
-            <Label.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="-0.302"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Label.RenderTransform>
-        </Label>
-        <TextBox HorizontalAlignment="Left" Margin="223,76,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="Date1"/>
-        <TextBox HorizontalAlignment="Left" Margin="223,107,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="Date2"/>
-        <TextBox HorizontalAlignment="Left" Margin="223,145,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="Date3"/>
-        <TextBox HorizontalAlignment="Left" Margin="223,182,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="Date4"/>
-        <TextBox HorizontalAlignment="Left" Margin="223,223,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="Date5"/>
-        <TextBox HorizontalAlignment="Left" Margin="223,269,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="Date6"/>
-        <TextBox HorizontalAlignment="Left" Margin="223,306,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="Date7"/>
-        <Label Content="Time" Margin="416,10,248,381" FontSize="25"/>
-        <TextBox HorizontalAlignment="Left" Margin="416,70,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="Time1"/>
-        <TextBox HorizontalAlignment="Left" Margin="416,107,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="Time2"/>
-        <TextBox HorizontalAlignment="Left" Margin="416,145,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="Time3"/>
-        <TextBox HorizontalAlignment="Left" Margin="416,182,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="Time4"/>
-        <TextBox HorizontalAlignment="Left" Margin="416,223,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="Time5"/>
-        <TextBox HorizontalAlignment="Left" Margin="416,269,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="Time6"/>
-        <TextBox HorizontalAlignment="Left" Margin="416,306,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="Time7"/>
-        <DatePicker HorizontalAlignment="Left" Margin="609,64,0,0" VerticalAlignment="Top" Name="Datepicker1" />
-        
-        <DatePicker HorizontalAlignment="Left" Margin="609,101,0,0" VerticalAlignment="Top" Name="Datepicker2"/>
-        <DatePicker HorizontalAlignment="Left" Margin="609,139,0,0" VerticalAlignment="Top" Name="Datepicker3"/>
-        <DatePicker HorizontalAlignment="Left" Margin="609,179,0,0" VerticalAlignment="Top" Name="Datepicker4"/>
-        <DatePicker HorizontalAlignment="Left" Margin="609,217,0,0" VerticalAlignment="Top" Name="Datepicker5"/>
-        <DatePicker HorizontalAlignment="Left" Margin="609,263,0,0" VerticalAlignment="Top" Name="Datepicker6"/>
-        <DatePicker HorizontalAlignment="Left" Margin="609,300,0,0" VerticalAlignment="Top" Name="Datepicker7"/>
+        Title="Todolist" Height="450" Width="800">
+    <Border BorderBrush="Black" BorderThickness="2" CornerRadius="5" Padding="10" Margin="44,10,528,12">
+        <Grid >
+            <!-- Das erste Element -->
+            <Label Content="Activity" HorizontalAlignment="Left" FontSize="20" VerticalAlignment="Top"/>
 
-    </Grid>
+            <!-- Ein weiteres erlaubtes Element im selben Dokument -->
+            <Button Content="Save" HorizontalAlignment="Left" x:Name="SaveBTN" Margin="37,338,0,0" VerticalAlignment="Top" Height="25" Width="122" Click="SaveBTN_Click"/>
+            <TextBox HorizontalAlignment="Left" x:Name="Activity1" Margin="0,54,0,0" TextWrapping="Wrap" Text="InsertActivity" FontSize="12" VerticalAlignment="Top" Width="120"/>
+            <TextBox HorizontalAlignment="Left" x:Name="Activity2" Margin="0,77,0,0" TextWrapping="Wrap" Text="InsertActivity" FontSize="12" VerticalAlignment="Top" Width="120" Height="21"/>
+            <TextBox HorizontalAlignment="Left" x:Name="Activity3" Margin="0,103,0,0" TextWrapping="Wrap" Text="InsertActivity" FontSize="12" VerticalAlignment="Top" Width="120" Height="20"/>
+            <TextBox HorizontalAlignment="Left" x:Name="Activity4" Margin="0,128,0,0" TextWrapping="Wrap" Text="InsertActivity" FontSize="12" VerticalAlignment="Top" Width="120" Height="20"/>
+            <TextBox HorizontalAlignment="Left" x:Name="Activity5" Margin="0,153,0,0" TextWrapping="Wrap" Text="InsertActivity" FontSize="12" VerticalAlignment="Top" Width="120" Height="20"/>
+        </Grid>
+    </Border>
 </Window>
+
+
