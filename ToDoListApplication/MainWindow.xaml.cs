@@ -61,6 +61,8 @@ namespace ToDoListApplication
 
         private void Counter_TextChanged(object sender, TextChangedEventArgs e)
         {
+            TextBoxes.Clear();
+            DynamicControlsPanel.Children.Clear();
             string text = Counter.Text;
             if (int.TryParse(text, out int number))
             {
