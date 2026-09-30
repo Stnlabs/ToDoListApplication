@@ -8,16 +8,20 @@
         Title="Todolist" Height="450" Width="800">
     <Border BorderBrush="Black" BorderThickness="2" CornerRadius="5" Padding="10" Margin="44,10,528,12">
         <Grid >
-            <!-- Das erste Element -->
-            <Label Content="Activity" HorizontalAlignment="Left" FontSize="20" VerticalAlignment="Top"/>
 
             <!-- Ein weiteres erlaubtes Element im selben Dokument -->
-            <Button Content="Save" HorizontalAlignment="Left" x:Name="SaveBTN" Margin="37,338,0,0" VerticalAlignment="Top" Height="25" Width="122" Click="SaveBTN_Click"/>
-            <TextBox HorizontalAlignment="Left" x:Name="Activity1" Margin="0,54,0,0" TextWrapping="Wrap" Text="InsertActivity" FontSize="12" VerticalAlignment="Top" Width="120"/>
-            <TextBox HorizontalAlignment="Left" x:Name="Activity2" Margin="0,77,0,0" TextWrapping="Wrap" Text="InsertActivity" FontSize="12" VerticalAlignment="Top" Width="120" Height="21"/>
-            <TextBox HorizontalAlignment="Left" x:Name="Activity3" Margin="0,103,0,0" TextWrapping="Wrap" Text="InsertActivity" FontSize="12" VerticalAlignment="Top" Width="120" Height="20"/>
-            <TextBox HorizontalAlignment="Left" x:Name="Activity4" Margin="0,128,0,0" TextWrapping="Wrap" Text="InsertActivity" FontSize="12" VerticalAlignment="Top" Width="120" Height="20"/>
-            <TextBox HorizontalAlignment="Left" x:Name="Activity5" Margin="0,153,0,0" TextWrapping="Wrap" Text="InsertActivity" FontSize="12" VerticalAlignment="Top" Width="120" Height="20"/>
+            <Button Content="Save" HorizontalAlignment="Left" x:Name="SaveBTN" Margin="37,338,0,0" VerticalAlignment="Top" Height="25" Width="122" Click="SaveBTN_Click_1"/>
+            <Label Content="Counter:" Margin="0,10,86,339" RenderTransformOrigin="0.242,0.584"/>
+            <TextBox Text="" FontSize="12" x:Name="Counter" TextChanged="Counter_TextChanged" TextAlignment="Center" Margin="132,10,10,342"/>
+            <TextBox Text="" FontSize="12" x:Name="Timer" TextAlignment="Center" Margin="132,54,10,300"/>
+            <Label Content="Timer:" Margin="0,54,125,300"/>
+            <StackPanel>
+
+                <StackPanel Margin="0, 150, 0, 0" x:Name="DynamicControlsPanel"/>
+
+            </StackPanel>
+
+
         </Grid>
     </Border>
 </Window>

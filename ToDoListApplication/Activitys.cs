@@ -8,8 +8,10 @@ namespace ToDoListApplication
     {
         public string Name {  get; set; }
 
-        public string Description { get; set; }
-
-        public DateTime TimeOfTheEvent { get; set; }
+        public string Description { get; set; }   
+        public DateTime Start { get; set; }
+        public DateTime Ende { get; set; }
+        public TimeSpan Dauer { get; set; }
+        public List<string> NamenDerAktivitäten = new List<string>();
     }
 }
